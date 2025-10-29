@@ -1,9 +1,10 @@
 #urgentes {
-    background-color: #ff0000;
+    border: 2px solid red;
+
 
 }
 
 #nao_urgentes {
-    background-color: #00ff40;
+    border: 2px solid rgb(21, 255, 0);
 
 }

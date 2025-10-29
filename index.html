@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="js/mini_projeto.js"></script>
     <link rel="stylesheet" href="css/mini_projeto.css">
     <title>Notas</title>
-</head>
 
+</head>
 <body>
 
     <h1>Notas rápidas</h1>
     <label>Digite sua nova nota</label>
     <input type="text" id="nota"><br><br>
     <input type="button" value="Inserir nota" onclick="inserirnota()">
-    <input type="radio" name="urgencia" value="nao_urgente" checked> Não urgente
-    <input type="radio" name="urgencia" value="sim_urgente"> Urgente
+    <label><input type="radio" name="urgencia" value="nao_urgente" checked> Não urgente</label>
+    <label><input type="radio" name="urgencia" value="sim_urgente"> Urgente</label>
+
+    <h2>Urgentes</h2>
+    <div id="urgentes">
+        <p></p>
+    </div>
+
+    <h2>Não urgentes</h2>
+    <div id="nao_urgentes">
+        <p></p>
+    </div>
 
 
-    <div id="urgentes"></div>
-    <div id="nao_urgentes"></div>
+    <input type="button" value="Apagar tudo" onclick="apagartudo()">
+    <input type="button" value="Apagar última nota" onclick="apagar()">
 
+    <script type="text/javascript" src="js/mini_projeto.js"></script>
 </body>
 </html>
+
