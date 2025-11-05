@@ -1,7 +1,7 @@
 var contador = 0
 
 function inserirnota() {
-    var nota = document.getElementById("nota").value.trim()
+    var nota = document.getElementById("nota").value.trim()    
 
     var tipo = document.querySelector('input[name="urgencia"]:checked').value
 
@@ -26,9 +26,16 @@ function inserirnota() {
     }
 
 function apagartudo() {
-        document.getElementById("urgentes").innerHTML = ""
-        document.getElementById("nao_urgentes").innerHTML = ""
+    var urgentes = document.getElementById("urgentes");
+    var naoUrgentes = document.getElementById("nao_urgentes");
+
+    if (urgentes.childElementCount == 0 && naoUrgentes.childElementCount == 0) {
+        alert("Não há nada para apagar");
+    } else {
+        urgentes.innerHTML = "";
+        naoUrgentes.innerHTML = "";
     }
+}
 
 function apagar() {
     var tipo = document.querySelector('input[name="urgencia"]:checked').value
