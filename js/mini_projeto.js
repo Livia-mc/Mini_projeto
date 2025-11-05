@@ -1,4 +1,5 @@
 var contador = 0
+
 function inserirnota() {
     var nota = document.getElementById("nota").value.trim()
 
@@ -19,7 +20,7 @@ function inserirnota() {
         document.getElementById("nota").value = ""
 
         contador++
-        if (contador >= colors.length) {
+        if (contador >= 3) {
         contador = 0;
         }
     }
