@@ -14,7 +14,7 @@ function inserirnota() {
     guardar.className = "nota"
     guardar.textContent = nota
 
-    guardar.style.backgroundColor = colors[contador]
+    guardar.style.color = colors[contador]
 
     if (tipo === "sim_urgente") {
         document.getElementById("urgentes").appendChild(guardar)
