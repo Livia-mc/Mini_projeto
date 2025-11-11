@@ -5,7 +5,7 @@ function inserirnota() {
     var nota = document.getElementById("nota").value.trim()   
      if (!nota) {
         alert("Digite uma nota antes de inserir.")
-        return 
+        return }
 
     var tipo = document.querySelector('input[name="urgencia"]:checked').value
 
@@ -42,7 +42,6 @@ function inserirnota() {
     if (contador >= colors.length) {
         contador = 0
     }
-}
 
 function apagartudo() {
 
